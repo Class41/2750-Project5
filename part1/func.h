@@ -1,6 +1,6 @@
-// # Vasyl Onufriyev
-// # 2750 PA5
-// 10-24-18
+//# Vasyl Onufriyev
+//# CS2750 PA5
+//# 10-24-18
 
 #ifndef _FUNC_H
 #define _FUNC_H

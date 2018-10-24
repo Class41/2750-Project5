@@ -1,6 +1,6 @@
-// # Vasyl Onufriyev
-// # 2750 PA5
-// 10-24-18
+//# Vasyl Onufriyev
+//# CS2750 PA5
+//# 10-24-18
 
 #include <string.h>
 #include <stdio.h>
