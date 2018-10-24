@@ -9,31 +9,30 @@
 
 int main(int argc, char **argv)
 {
-   int i;
-   int total = 0;
+   int i; //iterator
+   int total = 0; //integer counter
    
-   int indicies[200];
-   int indiciesc = 0;
+   int indicies[200]; //stores positions of strings
+   int indiciesc = 0; //counts number stored in indicies
 
-   for(i = 0; i < argc; i++)
+   for(i = 0; i < argc; i++) //loop through all items in arguments
    {
       int k = 0;
       int integer = 1;
 
       while(argv[i][k] != '\0')
       {
-         if(!isdigit(argv[i][k]))
-         {
+         if(!isdigit(argv[i][k])) //determine if full arg is numbers only
             integer = 0;
-         }
+
          k++;
       }
 
-      if(integer == 1)
+      if(integer == 1) //if argv[i] is number only, add it to total count
        { 
         total += atoi(argv[i]);
        }
-       else
+       else //if not, add to list of things to be checked for substr
        {
          indicies[indiciesc] = i;
          indiciesc++;
@@ -42,11 +41,11 @@ int main(int argc, char **argv)
 
    printf("\nTotal integers: %d", total);
 
-   for(i = 0; i < indiciesc; i++)
+   for(i = 0; i < indiciesc; i++) //check all strings for substrings
    {
       dosubcheck(argv[indicies[i]], argv, indicies[i] + 1, argc);
    }
 
-   printf("\n\n");
+   printf("\n\n"); //just for formatting
    return 0;
 }
