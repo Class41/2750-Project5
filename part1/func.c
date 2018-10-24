@@ -11,9 +11,9 @@ void dosubcheck(char *val, char **vals, int startpos, int valsc)
    int i;
    for(i = startpos; i < valsc; i++)
    {
-      if(strstr(val, vals[i]) > 0)
+      if(strstr(vals[i], val) != NULL)
       {
-         printf("\n%s found in %s", val, vals[i]);
+         printf("\n%s is a substring of %s", val, vals[i]);
       }
    }
 }

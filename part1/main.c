@@ -40,13 +40,13 @@ int main(int argc, char **argv)
        }
    }
 
+   printf("\nTotal integers: %d", total);
+
    for(i = 0; i < indiciesc; i++)
    {
-      dosubcheck(argv[indicies[i]], argv, indicies[i], argc);
+      dosubcheck(argv[indicies[i]], argv, indicies[i] + 1, argc);
    }
 
-
-
-   printf("\nTotal: %d", total);
+   printf("\n\n");
    return 0;
 }
