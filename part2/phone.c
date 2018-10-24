@@ -8,16 +8,16 @@
 int main()
 {
    char input[200];
-   printf("Input: ");
+   printf("•Input: ");
 
    scanf("%s", input);
    
-   int i = 1;
+   int i = 0;
 
    char phvalues[10];
    int phcnt = 0;
 
-   while(input[i] != '\0' && phcnt < 10)
+   while(input[i] != '\0' && phcnt <= 9)
    {
       if(isdigit(input[i]))
       {
@@ -33,7 +33,7 @@ int main()
       return 1;
    }
 
-  puts(phvalues); 
+   phone_fmt(phvalues); 
    
    return 0;
 }
