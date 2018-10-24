@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 
    for(i = 0; i < indiciesc; i++)
    {
-      dosubcheck(argv[idicies[i]], argv, argc);
+      dosubcheck(argv[indicies[i]], argv, indicies[i], argc);
    }
 
 

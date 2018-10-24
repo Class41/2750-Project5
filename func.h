@@ -5,6 +5,6 @@
 #ifndef _FUNC_H
 #define _FUNC_H
 
-void dosubcheck(char *val, char **vals, int valsc);
+void dosubcheck(char *val, char **vals, int startpos, int valsc);
 
 #endif
