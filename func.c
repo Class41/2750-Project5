@@ -2,9 +2,16 @@
 // # 2750 PA5
 // 10-24-18
 
-#ifndef _FUNC_H
-#define _FUNC_H
+#include <string.h>
 
-dosubcheck(char *val, char **vals, int valsc);
-
-#endif
+void dosubcheck(char *val, char **vals, int valsc)
+{
+   int i;
+   for(i = 0; i < valsc; i++)
+   {
+      if(strpos(val, vals[i]) > 0)
+      {
+         printf("SUB FOUND");
+      }
+   }
+}
