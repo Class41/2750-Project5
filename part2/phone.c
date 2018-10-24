@@ -14,16 +14,13 @@ int main()
    
    int i = 1;
 
-   int phvalues[10];
+   char phvalues[10];
    int phcnt = 0;
 
-   while(input[i] != '\0')
+   while(input[i] != '\0' && phcnt < 10)
    {
       if(isdigit(input[i]))
       {
-         if(phcnt >= 9)
-            break;
-
          phvalues[phcnt] = input[i];
          phcnt++;
       }
@@ -33,7 +30,10 @@ int main()
    if(phcnt < 9)
    {
       puts("Output: ERROR: Not enough digits on input!");
+      return 1;
    }
 
+  puts(phvalues); 
+   
    return 0;
 }
