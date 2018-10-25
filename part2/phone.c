@@ -7,7 +7,10 @@
 
 int main()
 {
-   char input[200];
+   printf("input a telephone number as a string containing a three-digit \
+   area code, followed by a seven-digit number\n\n");
+
+   char input[201];
    printf("•Input: ");
 
    scanf("%s", input);

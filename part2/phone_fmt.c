@@ -6,7 +6,7 @@
 
 void phone_fmt(char *phvals)
 {
-   printf("Output: (%c%c%c)%c%c%c-%c%c%c%c",
+   printf("Output: (%c%c%c)%c%c%c-%c%c%c%c\n",
          phvals[0],
          phvals[1],
          phvals[2],
