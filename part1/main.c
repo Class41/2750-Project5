@@ -12,7 +12,7 @@ int main(int argc, char **argv)
    int i; //iterator
    int total = 0; //integer counter
    
-   int indicies[200]; //stores positions of strings
+   int indicies[201]; //stores positions of strings
    int indiciesc = 0; //counts number stored in indicies
 
    for(i = 0; i < argc; i++) //loop through all items in arguments

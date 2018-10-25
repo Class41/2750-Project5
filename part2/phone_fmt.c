@@ -4,10 +4,10 @@
 
 #include <stdio.h>
 
-void phone_fmt(char *phvals)
+void phone_fmt(char *phvals) //performs formatted output of phone numbers
 {
-   printf("Output: (%c%c%c)%c%c%c-%c%c%c%c\n",
-         phvals[0],
+   printf("Output: (%c%c%c)%c%c%c-%c%c%c%c\n", //display all 10 elements 
+         phvals[0],                            //as demanded by format
          phvals[1],
          phvals[2],
          phvals[3],

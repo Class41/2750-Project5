@@ -6,7 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void dosubcheck(char *val, char **vals, int startpos, int valsc)
+//performs checks on substrings of future strings
+void dosubcheck(char *val, char **vals, int startpos, int valsc) 
 {
    int i; //iterator
    for(i = startpos; i < valsc; i++) //check onwards from curpos + 1
