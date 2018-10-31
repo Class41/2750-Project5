@@ -18,7 +18,7 @@ int main()
    int i = 0; //iterator declaration
 
    char phvalues[10]; //holds first 10 digits detected
-   int phcnt = 0 //keeps track of # of digits in the above array;
+   int phcnt = 0; //keeps track of # of digits in the above array;
 
    while(input[i] != '\0' && phcnt <= 9)
    {
